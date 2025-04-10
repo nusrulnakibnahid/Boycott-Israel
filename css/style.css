@@ -714,12 +714,27 @@ a:hover {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid var(--card-border);
-    text-align: center;
     font-size: 0.9rem;
     color: var(--gray);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
+}
+
+/* Optional: Add these if you need to ensure text alignment */
+.left {
+    text-align: left;
+    flex: 1;
+}
+.middle {
+    text-align: center;
+    flex: 1;
+}
+.right {
+    text-align: right;
+    flex: 1;
 }
 
 /* Scrollbar */
