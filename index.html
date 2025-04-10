@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ইসরাইলি পণ্য বর্জন - বাংলাদেশি বিকল্প</title>
+    <link rel="icon" href="images/title logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#">
+                <div class="logo">
+                    <img src="images/logo.png" alt="বাংলাদেশি পণ্য">
+                    
+                </div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">আমাদের সম্পর্কে</a>
+                <a href="#categories">পণ্য তালিকা</a>
+                <button class="theme-toggle">
+                    <span class="dark-icon">🌙</span>
+                    <span class="light-icon">☀️</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>ইসরাইল সমর্থিত পণ্য চিহ্নিত করুন</h1>
+                <p>পণ্য সার্চ করুন এবং বাংলাদেশি বিকল্প খুঁজে নিন</p>
+                
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="পণ্য বা ব্র্যান্ড নাম লিখুন...">
+                        <button id="searchBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section" id="resultsSection">
+        <div class="container">
+            <div class="result-card" id="resultCard">
+                <div class="result-header">
+                    <div class="product-info">
+                        <img id="productLogo" src="" alt="Product Logo" class="product-logo">
+                        <div>
+                            <h3 id="productName"></h3>
+                            <p class="company-name" id="companyName"></p>
+                            <p class="product-description" id="productDescription"></p>
+                        </div>
+                    </div>
+                    <span id="isIsraeli"></span>
+                </div>
+                
+                <div class="israeli-info" id="israeliInfo">
+                    <div class="warning-icon">⚠️</div>
+                    <p>এই ব্র্যান্ড ইসরাইল বা ইসরাইলি কোম্পানিকে সমর্থন করে!</p>
+                </div>
+                
+                <div class="alternatives-section" id="alternativesSection">
+                    <h4>বাংলাদেশি বিকল্পসমূহ:</h4>
+                    <div class="alternatives-grid" id="alternativesList"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2>পণ্য বিভাগসমূহ</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="food">
+                    <img src="images/categories/Food & Beverage.webp" alt="Food & Beverage">
+                    <h3>খাদ্য ও পানীয়</h3>
+                </div>
+                <div class="category-card" data-category="personal-care">
+                    <img src="images/categories/Personal Care.jpg" alt="Personal Care">
+                    <h3>ব্যক্তিগত যত্ন</h3>
+                </div>
+                <div class="category-card" data-category="electronics">
+                    <img src="images/categories/Electronics.webp" alt="Electronics">
+                    <h3>ইলেকট্রনিক্স</h3>
+                </div>
+                <div class="category-card" data-category="clothing">
+                    <img src="images/categories/Clothing.jpeg" alt="Clothing">
+                    <h3>পোশাক</h3>
+                </div>
+                <div class="category-card" data-category="baby-care">
+                    <img src="images/categories/Baby Care.jpeg" alt="Baby Care">
+                    <h3>শিশুদের পণ্য</h3>
+                </div>
+                <div class="category-card" data-category="other">
+                    <img src="images/categories/Other.jpg" alt="Other">
+                    <h3>অন্যান্য</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Products -->
+    <section class="popular-products">
+        <div class="container">
+            <h2>জনপ্রিয় পণ্য সমূহ</h2>
+            <div class="products-grid" id="popularProductsGrid"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>কেন এই ওয়েবসাইট?</h2>
+                <p>ফিলিস্তিনে ইসরাইলের নির্মম হামলা ও গণহত্যার বিরুদ্ধে আমার ক্ষুদ্র প্রচেষ্টা। এই ওয়েবসাইটের মাধ্যমে আপনি চিহ্নিত করতে পারবেন কোন পণ্য বা ব্র্যান্ড ইসরাইল বা ইসরাইলি কোম্পানির সাথে সম্পর্কিত এবং সেইসাথে পাবেন বাংলাদেশি বিকল্পের সুবিধা।</p>
+                <p>ইসরাইল সমর্থনকারী পণ্য বর্জন করে আমরা ফিলিস্তিনি ভাইবোনদের প্রতি আমাদের সমর্থন জানাতে পারি।</p>
+                
+                <div class="stats">
+                    <div class="stat-card">
+                        <span class="stat-number" id="totalProducts">200+</span>
+                        <span class="stat-label">পণ্য ডাটাবেসে</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="bdAlternatives">150+</span>
+                        <span class="stat-label">বাংলাদেশি বিকল্প</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" id="israeliBrands">100+</span>
+                        <span class="stat-label">ইসরাইলি সমর্থিত</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="বাংলাদেশি পণ্য">
+                    <span>ইসরাইলি পণ্য বর্জন</span>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h4>লিঙ্ক</h4>
+                        <a href="#">হোম</a>
+                        <a href="#categories">পণ্য তালিকা</a>
+                        <a href="#about">আমাদের সম্পর্কে</a>
+                    </div>
+                    <div class="links-column">
+                        <h4>সম্পদ</h4>
+                        <a href="https://theislamicinformation.com/news/list-of-brands-supporting-israel/">ব্র্যান্ড লিস্ট</a>
+                        <a href="https://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B6%E0%A7%87%E0%A6%B0_%E0%A6%95%E0%A7%8B%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%BE%E0%A6%A8%E0%A6%BF%E0%A6%B0_%E0%A6%A4%E0%A6%BE%E0%A6%B2%E0%A6%BF%E0%A6%95%E0%A6%BE">বাংলাদেশি পণ্য</a>
+                        <a href="https://boycott.thewitness.news/">বয়কট গাইড</a>
+                    </div>
+                    <div class="links-column">
+                        <h4>যোগাযোগ</h4>
+                        <a href="https://www.facebook.com/nakibnahid.restricted" target="_blank">ফেসবুক</a>
+                        <a href="https://wa.me/8801969464568" target="_blank">হোয়াটসঅ্যাপ</a>
+                        <a href="https://github.com/nusrulnakibnahid" target="_blank">গিটহাব</a>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© ২০২৫ ইসরাইলি পণ্য বর্জন - সকল অধিকার সংরক্ষিত</p>
+                <p>ফিলিস্তিনের পাশে দাঁড়ান, ইসরাইলি পণ্য বর্জন করুন</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
