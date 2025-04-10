@@ -471,7 +471,8 @@ function searchProduct() {
         productNameEl.textContent = query;
         companyNameEl.textContent = '';
         productDescriptionEl.textContent = '';
-        productLogoEl.src = '';
+        productLogoEl.src = 'images/not found.jpg'; // Add this X image to your images folder
+        productLogoEl.alt = 'Product not found';
         isIsraeliEl.textContent = 'পণ্যটি ডাটাবেসে নেই';
         isIsraeliEl.className = 'not-found';
         israeliInfo.style.display = 'none';
