@@ -471,7 +471,7 @@ function searchProduct() {
         productNameEl.textContent = query;
         companyNameEl.textContent = '';
         productDescriptionEl.textContent = '';
-        productLogoEl.src = 'images/not found.jpg'; // Add this X image to your images folder
+        productLogoEl.src = 'images/not found.jpg';
         productLogoEl.alt = 'Product not found';
         isIsraeliEl.textContent = 'পণ্যটি ডাটাবেসে নেই';
         isIsraeliEl.className = 'not-found';
@@ -502,6 +502,7 @@ function showProductsByCategory(category) {
     categorySection.className = 'category-products-section';
     categorySection.innerHTML = `
         <div class="container">
+            <button class="back-to-categories">← পণ্য বিভাগসমূহে ফিরে যান</button>
             <h2>${getCategoryName(category)} পণ্য সমূহ</h2>
             <div class="category-products-grid" id="categoryProductsGrid"></div>
         </div>
@@ -525,13 +526,27 @@ function showProductsByCategory(category) {
         grid.appendChild(productCard);
     });
     
+    // Activate the section
+    setTimeout(() => {
+        categorySection.classList.add('active');
+        categorySection.scrollIntoView({ behavior: 'smooth' });
+    }, 10);
+    
     // Add event listeners to view details buttons
     document.querySelectorAll('.view-details-btn').forEach(btn => {
         btn.addEventListener('click', () => {
             searchInput.value = btn.dataset.product;
             searchProduct();
-            categorySection.scrollIntoView({ behavior: 'smooth' });
         });
+    });
+    
+    // Add event listener to back button
+    categorySection.querySelector('.back-to-categories').addEventListener('click', () => {
+        categorySection.classList.remove('active');
+        setTimeout(() => {
+            categorySection.remove();
+            document.querySelector('#categories').scrollIntoView({ behavior: 'smooth' });
+        }, 300);
     });
 }
 
