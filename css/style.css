@@ -739,18 +739,54 @@ a:hover {
     gap: 40px;
 }
 
+/* slideshow CSS */
 .footer-logo {
     display: flex;
     align-items: center;
     gap: 10px;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1rem;
     justify-content: center;
     color: var(--text-color);
+    text-align: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .footer-logo img {
     height: 40px;
+    flex-shrink: 0;
+}
+
+.slogan-marquee {
+    width: 300px; 
+    overflow: hidden;
+    position: relative;
+    height: 1.5em;
+}
+
+.slogan-track {
+    display: flex;
+    position: absolute;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+}
+
+.slogan-slide {
+    padding: 0 30px;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Moves half the total width */
+}
+
+/* Pause on hover */
+.slogan-marquee:hover .slogan-track {
+    animation-play-state: paused;
 }
 
 .footer-links {
