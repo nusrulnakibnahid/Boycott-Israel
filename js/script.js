@@ -27,6 +27,53 @@ const products = {
             { name: "RC Cola", logo: "images/bangladeshi/RC Cola.jpeg", company: "Global Beverage Ltd" }
         ]
     },
+    "Sprite": {
+        name: "Sprite",
+        company: "The Coca-Cola Company",
+        category: "food",
+        isIsraeli: true,
+        logo: "images/international/Sprite.jpg",
+        description: "লেমন-লাইম ফ্লেভার্ড সফট ড্রিংক",
+        alternatives: [
+            { name: "Lemu", logo: "images/bangladeshi/Lemu.jpg", company: "Akij Food & Beverage Ltd" }
+        ]
+    },
+    "Fanta": {
+        name: "Fanta",
+        company: "The Coca-Cola Company",
+        category: "food",
+        isIsraeli: true,
+        logo: "images/international/Fanta.png",
+        description: "ফ্রুট ফ্লেভার্ড সফট ড্রিংক",
+        alternatives: [
+            { name: "Mojo", logo: "images/bangladeshi/mojo.jpg", company: "Akij Food & Beverage Ltd" },
+            { name: "Speed", logo: "images/bangladeshi/Speed.png", company: "Global Beverage Ltd" },
+            { name: "RC Cola", logo: "images/bangladeshi/RC Cola.jpeg", company: "Global Beverage Ltd" }
+        ]
+    },
+    "7up": {
+        name: "7up",
+        company: "PepsiCo",
+        category: "food",
+        isIsraeli: true,
+        logo: "images/international/7up.png",
+        description: "লেমন-লাইম ফ্লেভার্ড সফট ড্রিংক",
+        alternatives: [
+            { name: "Lemu", logo: "images/bangladeshi/Lemu.jpg", company: "Akij Food & Beverage Ltd" }
+        ]
+    },
+    "Aquafina": {
+        name: "Aquafina",
+        company: "PepsiCo",
+        category: "food",
+        isIsraeli: true,
+        logo: "images/international/Aquafina.png",
+        description: "বোতলজাত পানি",
+        alternatives: [
+            { name: "Mum", logo: "images/bangladeshi/Mum.jpg", company: "Partex Beverage Ltd" },
+            { name: "Pran Drinking Water", logo: "images/bangladeshi/Pran Drinking Water.png", company: "PRAN Group" }
+        ]
+    },
     "Nestle": {
         name: "Nestle",
         company: "Nestlé S.A.",
@@ -51,6 +98,29 @@ const products = {
             { name: "Mr. Noodles", logo: "images/bangladeshi/mr noddles.png", company: "Square Food & Beverage Ltd" }
         ]
     },
+    "KitKat": {
+        name: "KitKat",
+        company: "Nestlé S.A.",
+        category: "food",
+        isIsraeli: true,
+        logo: "images/international/KitKat.jpg",
+        description: "চকলেট বার",
+        alternatives: [
+            { name: "Pran Choco", logo: "images/bangladeshi/Pran Choco.webp", company: "PRAN Group" },
+            { name: "Olympic Chocolate", logo: "images/bangladeshi/Olympic Chocolate.jpg", company: "Olympic Industries Ltd" }
+        ]
+    },
+    "Nescafe": {
+        name: "Nescafe",
+        company: "Nestlé S.A.",
+        category: "food",
+        isIsraeli: true,
+        logo: "images/international/Nescafe.jpg",
+        description: "ইনস্ট্যান্ট কফি",
+        alternatives: [
+            { name: "Pran Coffee", logo: "images/bangladeshi/Pran Coffee.webp", company: "PRAN Group" }
+        ]
+    },
     "Oreo": {
         name: "Oreo",
         company: "Mondelez International",
@@ -73,6 +143,17 @@ const products = {
         alternatives: [
             { name: "Chillox", logo: "images/bangladeshi/Chillox.jpg", company: "Chillox Bangladesh" },
             { name: "BFC", logo: "images/bangladeshi/BFC.png", company: "Best Fried Chicken" }
+        ]
+    },
+    "Pizza Hut": {
+        name: "Pizza Hut",
+        company: "Yum! Brands",
+        category: "food",
+        isIsraeli: true,
+        logo: "images/international/Pizza Hut.png",
+        description: "পিজা রেস্টুরেন্ট চেইন",
+        alternatives: [
+            { name: "Domino's Pizza", logo: "images/bangladeshi/Domino's Pizza.png", company: "Domino's Pizza Bangladesh" }
         ]
     },
 
@@ -113,8 +194,91 @@ const products = {
             { name: "Meril Fairness", logo: "images/bangladeshi/Meril Fairness.png", company: "Meril Consumer Ltd" }
         ]
     },
+    "L'Oréal": {
+        name: "L'Oréal",
+        company: "L'Oréal S.A.",
+        category: "personal-care",
+        isIsraeli: true,
+        logo: "images/international/L'Oréal.png",
+        description: "বিউটি ও কসমেটিক পণ্য",
+        alternatives: [
+            { name: "Orkid", logo: "images/bangladeshi/Orkid.jpg", company: "Square Toiletries" },
+            { name: "Skya", logo: "images/bangladeshi/Skya.webp", company: "Skya Transdermic" }
+        ]
+    },
+    "Garnier": {
+        name: "Garnier",
+        company: "L'Oréal",
+        category: "personal-care",
+        isIsraeli: true,
+        logo: "images/international/Garnier.png",
+        description: "চুল ও ত্বকের যত্ন",
+        alternatives: [
+            { name: "Meril", logo: "images/bangladeshi/Meril.png", company: "Meril Consumer Ltd" },
+            { name: "Tibet", logo: "images/bangladeshi/tibet.png", company: "Kohinoor Chemical Company (Bangladesh) Limited." }
+        ]
+    },
+    "Pantene": {
+        name: "Pantene",
+        company: "Procter & Gamble",
+        category: "personal-care",
+        isIsraeli: true,
+        logo: "images/international/Pantene.png",
+        description: "হেয়ার কেয়ার পণ্য",
+        alternatives: [
+            { name: "Dabur Vatika", logo: "images/bangladeshi/Dabur Vatika.jpg", company: "Dabur Bangladesh" },
+            { name: "Savlon Hair Care", logo: "images/bangladeshi/Savlon Hair Care.png", company: "ACI Limited" }
+        ]
+    },
+    "Rexona": {
+        name: "Rexona",
+        company: "Unilever",
+        category: "personal-care",
+        isIsraeli: true,
+        logo: "images/international/Rexona.svg",
+        description: "ডিওডোরেন্ট",
+        alternatives: [
 
-    // Electronics
+            { name: "Breeze", logo: "images/bangladeshi/Breeze Protection.jpg", company: "ACI Limited" }
+        ]
+    },
+    "Head & Shoulders": {
+        name: "Head & Shoulders",
+        company: "Procter & Gamble",
+        category: "personal-care",
+        isIsraeli: true,
+        logo: "images/international/Head & Shoulder.png",
+        description: "অ্যান্টি-ড্যানড্রাফ শ্যাম্পু",
+        alternatives: [
+            
+            { name: "Revive", logo: "images/bangladeshi/Revive.jpg", company: "Square Company Ltd" }
+        ]
+    },
+    "Lux": {
+        name: "Lux",
+        company: "Unilever",
+        category: "personal-care",
+        isIsraeli: true,
+        logo: "images/international/Lux.png",
+        description: "সাবান ও বডি ওয়াশ",
+        alternatives: [
+            { name: "Meril", logo: "images/bangladeshi/Meril.png", company: "Meril Consumer Ltd" },
+            { name: "Tibet", logo: "images/bangladeshi/tibet.png", company: "Kohinoor Chemical Company (Bangladesh) Limited." }
+        ]
+    },
+    "Axe": {
+        name: "Axe",
+        company: "Unilever",
+        category: "personal-care",
+        isIsraeli: true,
+        logo: "images/international/Axe.png",
+        description: "ডিওডোরেন্ট ও বডি স্প্রে",
+        alternatives: [
+            { name: "Kool", logo: "images/bangladeshi/Kool.jpg", company: "KOOL GROUP LIMITED" }
+        ]
+    },
+
+    // Electronics & Technology
     "HP": {
         name: "HP",
         company: "HP Inc.",
@@ -140,8 +304,44 @@ const products = {
             { name: "Ryzen", logo: "images/bangladeshi/Ryzen.png", company: "AMD" }
         ]
     },
+    "Nokia": {
+        name: "Nokia",
+        company: "Nokia Corporation",
+        category: "electronics",
+        isIsraeli: true,
+        logo: "images/international/Nokia.png",
+        description: "মোবাইল ফোন ও নেটওয়ার্ক ইকুইপমেন্ট",
+        alternatives: [
+            { name: "Symphony", logo: "images/bangladeshi/Symphony.jpeg", company: "Symphony Mobile" },
+            { name: "Walton", logo: "images/bangladeshi/Walton.jpeg", company: "Walton Hi-Tech Industries" }
+        ]
+    },
+    "Motorola": {
+        name: "Motorola",
+        company: "Motorola Mobility",
+        category: "electronics",
+        isIsraeli: true,
+        logo: "images/international/Motorola.png",
+        description: "মোবাইল ফোন ও টেলিকম ইকুইপমেন্ট",
+        alternatives: [
+            { name: "Symphony", logo: "images/bangladeshi/Symphony.jpeg", company: "Symphony Mobile" },
+            { name: "Xiaomi", logo: "images/bangladeshi/Xiaomi.png", company: "Xiaomi Corporation" }
+        ]
+    },
+    "Siemens": {
+        name: "Siemens",
+        company: "Siemens AG",
+        category: "electronics",
+        isIsraeli: true,
+        logo: "images/international/Siemens.png",
+        description: "ইলেকট্রনিক্স ও ইন্ডাস্ট্রিয়াল ইকুইপমেন্ট",
+        alternatives: [
+            { name: "Walton", logo: "images/bangladeshi/Walton.jpeg", company: "Walton Hi-Tech Industries" },
+            { name: "Vision", logo: "images/bangladeshi/Vision.png", company: "Vision Electronics" }
+        ]
+    },
 
-    // Clothing
+    // Clothing & Fashion
     "Levi's": {
         name: "Levi's",
         company: "Levi Strauss & Co.",
@@ -154,7 +354,6 @@ const products = {
             { name: "Ecstasy", logo: "images/bangladeshi/Ecstasy.png", company: "Ecstasy Apparels" },
             { name: "Aarong", logo: "images/bangladeshi/Aarong.png", company: "BRAC" },
             { name: "Yellow", logo: "images/bangladeshi/Yellow.png", company: "Yellow Apparels Ltd" }
-        
         ]
     },
     "Nike": {
@@ -183,18 +382,53 @@ const products = {
             { name: "Bata", logo: "images/bangladeshi/Bata.png", company: "Bata Shoe Company (Bangladesh) Limited" }
         ]
     },
-
     "Puma": {
         name: "Puma",
-        company: "PUMA Schuhfabrik Rudolf Dassler",
+        company: "PUMA SE",
         category: "clothing",
         isIsraeli: true,
-        logo: "images/international/PUMA.jpg",
+        logo: "images/international/Puma.png",
         description: "স্পোর্টসওয়্যার ও জুতা",
         alternatives: [
             { name: "Bay", logo: "images/bangladeshi/Bay.png", company: "Bay Group" },
             { name: "Apex", logo: "images/bangladeshi/Apex.jpg", company: "Apex Footwear Limited" },
             { name: "Bata", logo: "images/bangladeshi/Bata.png", company: "Bata Shoe Company (Bangladesh) Limited" }
+        ]
+    },
+
+    "Hugo Boss": {
+        name: "Hugo Boss",
+        company: "Hugo Boss AG",
+        category: "clothing",
+        isIsraeli: true,
+        logo: "images/international/Hugo Boss.png",
+        description: "লাক্সারি ফ্যাশন ব্র্যান্ড",
+        alternatives: [
+            { name: "Yellow", logo: "images/bangladeshi/Yellow.png", company: "Yellow Apparels Ltd" },
+            { name: "Richman", logo: "images/bangladeshi/Richman.webp", company: "Richman Group" }
+        ]
+    },
+    "GAP": {
+        name: "GAP",
+        company: "Gap Inc.",
+        category: "clothing",
+        isIsraeli: true,
+        logo: "images/international/Gap.png",
+        description: "ক্যাজুয়াল পোশাক",
+        alternatives: [
+            { name: "Aarong", logo: "images/bangladeshi/Aarong.png", company: "BRAC" },
+            { name: "Ecstasy", logo: "images/bangladeshi/Ecstasy.png", company: "Ecstasy Apparels" }
+        ]
+    },
+    "Dior": {
+        name: "Dior",
+        company: "LVMH",
+        category: "clothing",
+        isIsraeli: true,
+        logo: "images/international/Dior.png",
+        description: "লাক্সারি ফ্যাশন ব্র্যান্ড",
+        alternatives: [
+            { name: "Aarong", logo: "images/bangladeshi/Aarong.png", company: "BRAC" }
         ]
     },
 
@@ -224,116 +458,119 @@ const products = {
         ]
     },
 
-    // Other Categories
-    "Spotify": {
-        name: "Spotify",
-        company: "Spotify Technology S.A.",
-        category: "other",
-        isIsraeli: true,
-        logo: "images/international/Spotify.png",
-        description: "মিউজিক স্ট্রিমিং সার্ভিস",
-        alternatives: [
-            { name: "Bongo Music", logo: "images/bangladeshi/Bongo Music.jpg", company: "Bongo Bangladesh" },
-            { name: "BandCamp BD", logo: "images/bangladeshi/BandCamp BD.png", company: "Bangladeshi Artists Collective" }
-        ]
-    },
-    "CNN": {
-        name: "CNN",
-        company: "Warner Bros. Discovery",
-        category: "other",
-        isIsraeli: true,
-        logo: "images/international/CNN.png",
-        description: "আন্তর্জাতিক সংবাদ চ্যানেল",
-        alternatives: [
-            { name: "Somoy TV", logo: "images/bangladeshi/Somoy TV.png", company: "Somoy Media Limited" },
-            { name: "Independent TV", logo: "images/bangladeshi/Independent TV.png", company: "Independent Television Ltd" },
-            { name: "Channel 24", logo: "images/bangladeshi/Channel 24.png", company: "Channel 24" }
-        ]
-    },
-    "Disney+": {
-        name: "Disney+",
-        company: "The Walt Disney Company",
-        category: "other",
-        isIsraeli: true,
-        logo: "images/international/Disney+.png",
-        description: "স্ট্রিমিং সার্ভিস",
-        alternatives: [
-            { name: "Bongo BD", logo: "images/bangladeshi/Bongo BD.png", company: "Bongo Bangladesh" },
-            { name: "Chorki", logo: "images/bangladeshi/Chorki.png", company: "Chorki Digital" }
-             
-        ]
-    },
-    "Amazon Prime": {
-        name: "Amazon Prime",
-        company: "Amazon.com, Inc.",
-        category: "other",
-        isIsraeli: false,
-        logo: "images/international/Amazon Prime.png",
-        description: "স্ট্রিমিং সার্ভিস"
-    },
-    "Uber": {
-        name: "Uber",
-        company: "Uber Technologies, Inc.",
-        category: "other",
-        isIsraeli: false,
-        logo: "images/international/Uber.png",
-        description: "রাইড শেয়ারিং সার্ভিস"
-    },
-    "Airbnb": {
-        name: "Airbnb",
-        company: "Airbnb, Inc.",
-        category: "other",
-        isIsraeli: true,
-        logo: "images/international/Airbnb.png",
-        description: "হোম স্টে সার্ভিস",
-        alternatives: [
-            { name: "ShareTrip", logo: "images/bangladeshi/ShareTrip.png", company: "ShareTrip Limited" },
-            { name: "Travela", logo: "images/bangladeshi/Travela.png", company: "Travela Bangladesh" }
-        ]
-    },
-    "Western Union": {
-        name: "Western Union",
-        company: "Western Union Company",
-        category: "other",
-        isIsraeli: false,
-        logo: "images/international/Western Union.png",
-        description: "মানি ট্রান্সফার সার্ভিস"
-    },
-    "TripAdvisor": {
-        name: "TripAdvisor",
-        company: "TripAdvisor, Inc.",
-        category: "other",
-        isIsraeli: true,
-        logo: "images/international/TripAdvisor.png",
-        description: "ট্রাভেল রিভিউ প্ল্যাটফর্ম",
-        alternatives: [
-            { name: "Travelmate", logo: "images/bangladeshi/Travelmate.png", company: "Travelmate Bangladesh" },
-            { name: "TourBD", logo: "images/bangladeshi/TourBD.jpg", company: "TourBD Limited" }
-        ]
-    },
-    "Booking.com": {
-        name: "Booking.com",
-        company: "Booking Holdings",
-        category: "other",
-        isIsraeli: true,
-        logo: "images/international/Booking.png",
-        description: "হোটেল বুকিং সার্ভিস",
-        alternatives: [
-            { name: "Shohoz", logo: "images/bangladeshi/Shohoz.png", company: "Shohoz Limited" }
-        ]
-    },
-    "Expedia": {
-        name: "Expedia",
-        company: "Expedia Group",
-        category: "other",
-        isIsraeli: true,
-        logo: "images/international/Expedia.png",
-        description: "ট্রাভেল বুকিং সার্ভিস",
-        alternatives: [
-            { name: "Desh Travels", logo: "images/bangladeshi/Desh Travels.png", company: "Desh Travels Limited" },
-            { name: "Green Line", logo: "images/bangladeshi/Green Line.png", company: "Green Line paribahan" }
-        ]
-    }
+
+
+
+
+// Other Category
+"Spotify": {
+    name: "Spotify",
+    company: "Spotify Technology S.A.",
+    category: "other",
+    isIsraeli: true,
+    logo: "images/international/Spotify.png",
+    description: "মিউজিক স্ট্রিমিং সার্ভিস",
+    alternatives: [
+        { name: "Bongo Music", logo: "images/bangladeshi/Bongo Music.jpg", company: "Bongo Bangladesh" },
+        { name: "BandCamp BD", logo: "images/bangladeshi/BandCamp BD.png", company: "Bangladeshi Artists Collective" }
+    ]
+},
+"CNN": {
+    name: "CNN",
+    company: "Warner Bros. Discovery",
+    category: "other",
+    isIsraeli: true,
+    logo: "images/international/CNN.png",
+    description: "আন্তর্জাতিক সংবাদ চ্যানেল",
+    alternatives: [
+        { name: "Somoy TV", logo: "images/bangladeshi/Somoy TV.png", company: "Somoy Media Limited" },
+        { name: "Independent TV", logo: "images/bangladeshi/Independent TV.png", company: "Independent Television Ltd" },
+        { name: "Channel 24", logo: "images/bangladeshi/Channel 24.png", company: "Channel 24" }
+    ]
+},
+"Disney+": {
+    name: "Disney+",
+    company: "The Walt Disney Company",
+    category: "other",
+    isIsraeli: true,
+    logo: "images/international/Disney+.png",
+    description: "স্ট্রিমিং সার্ভিস",
+    alternatives: [
+        { name: "Bongo BD", logo: "images/bangladeshi/Bongo BD.png", company: "Bongo Bangladesh" },
+        { name: "Chorki", logo: "images/bangladeshi/Chorki.png", company: "Chorki Digital" }
+    ]
+},
+"Amazon Prime": {
+    name: "Amazon Prime",
+    company: "Amazon.com, Inc.",
+    category: "other",
+    isIsraeli: false,
+    logo: "images/international/Amazon Prime.png",
+    description: "স্ট্রিমিং সার্ভিস"
+},
+"Uber": {
+    name: "Uber",
+    company: "Uber Technologies, Inc.",
+    category: "other",
+    isIsraeli: false,
+    logo: "images/international/Uber.png",
+    description: "রাইড শেয়ারিং সার্ভিস"
+},
+"Airbnb": {
+    name: "Airbnb",
+    company: "Airbnb, Inc.",
+    category: "other",
+    isIsraeli: true,
+    logo: "images/international/Airbnb.png",
+    description: "হোম স্টে সার্ভিস",
+    alternatives: [
+        { name: "ShareTrip", logo: "images/bangladeshi/ShareTrip.png", company: "ShareTrip Limited" },
+        { name: "Travela", logo: "images/bangladeshi/Travela.png", company: "Travela Bangladesh" }
+    ]
+},
+"Western Union": {
+    name: "Western Union",
+    company: "Western Union Company",
+    category: "other",
+    isIsraeli: false,
+    logo: "images/international/Western Union.png",
+    description: "মানি ট্রান্সফার সার্ভিস"
+},
+"TripAdvisor": {
+    name: "TripAdvisor",
+    company: "TripAdvisor, Inc.",
+    category: "other",
+    isIsraeli: true,
+    logo: "images/international/TripAdvisor.png",
+    description: "ট্রাভেল রিভিউ প্ল্যাটফর্ম",
+    alternatives: [
+        { name: "Travelmate", logo: "images/bangladeshi/Travelmate.png", company: "Travelmate Bangladesh" },
+        { name: "TourBD", logo: "images/bangladeshi/TourBD.jpg", company: "TourBD Limited" }
+    ]
+},
+"Booking.com": {
+    name: "Booking.com",
+    company: "Booking Holdings",
+    category: "other",
+    isIsraeli: true,
+    logo: "images/international/Booking.png",
+    description: "হোটেল বুকিং সার্ভিস",
+    alternatives: [
+        { name: "Shohoz", logo: "images/bangladeshi/Shohoz.png", company: "Shohoz Limited" }
+    ]
+},
+"Expedia": {
+    name: "Expedia",
+    company: "Expedia Group",
+    category: "other",
+    isIsraeli: true,
+    logo: "images/international/Expedia.png",
+    description: "ট্রাভেল বুকিং সার্ভিস",
+    alternatives: [
+        { name: "Desh Travels", logo: "images/bangladeshi/Desh Travels.png", company: "Desh Travels Limited" },
+        { name: "Green Line", logo: "images/bangladeshi/Green Line.png", company: "Green Line paribahan" }
+    ]
+}
 };
 
 // DOM Elements

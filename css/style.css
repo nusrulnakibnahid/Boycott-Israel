@@ -1,10 +1,10 @@
 /* Base Styles */
 :root {
-    --primary: #2563EB; /* Changed to blue */
-    --primary-dark: #1D4ED8; /* Darker blue */
-    --primary-light: #3B82F6; /* Lighter blue */
-    --secondary: #2563EB; /* Blue */
-    --secondary-dark: #1E40AF; /* Dark blue */
+    --primary: #1E88E5; 
+    --primary-dark: #1565C0; 
+    --primary-light: #42A5F5;
+    --secondary: #1E88E5; 
+    --secondary-dark: #0D47A1; 
     --danger: #EF4444;
     --warning: #F59E0B;
     --success: #10B981;
@@ -223,7 +223,7 @@ a:hover {
 .hero {
     padding: 80px 0;
     text-align: center;
-    background: linear-gradient(135deg, rgba(0, 106, 78, 0.1) 0%, rgba(244, 42, 65, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.1) 0%, rgba(66, 165, 245, 0.1) 100%);
 }
 
 .hero h1 {
@@ -268,7 +268,7 @@ a:hover {
 .search-box input:focus {
     outline: none;
     border-color: var(--primary);
-    box-shadow: 0 0 0 3px rgba(0, 106, 78, 0.3);
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.3);
 }
 
 .search-box button {
@@ -386,7 +386,7 @@ a:hover {
     display: none;
     align-items: center;
     gap: 10px;
-    background-color: rgba(244, 42, 65, 0.1);
+    background-color: rgba(239, 68, 68, 0.1);
     border-left: 4px solid var(--danger);
     padding: 15px;
     margin-bottom: 20px;
@@ -588,13 +588,13 @@ a:hover {
 .back-to-categories:hover {
     color: var(--primary-dark);
     text-decoration: underline;
-    background-color: rgba(0, 106, 78, 0.1);
+    background-color: rgba(30, 136, 229, 0.1);
 }
 
 /* Popular Products */
 .popular-products {
     padding: 60px 0;
-    background: linear-gradient(135deg, rgba(0, 106, 78, 0.05) 0%, rgba(244, 42, 65, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.05) 0%, rgba(66, 165, 245, 0.05) 100%);
 }
 
 .products-grid {
@@ -637,7 +637,7 @@ a:hover {
 /* About Section */
 .about-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, rgba(0, 106, 78, 0.1) 0%, rgba(244, 42, 65, 0.1) 100%);
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.1) 0%, rgba(66, 165, 245, 0.1) 100%);
     position: relative;
     overflow: hidden;
 }
@@ -679,7 +679,7 @@ a:hover {
 }
 
 .read-more-btn:hover {
-    background-color: rgba(0, 106, 78, 0.1);
+    background-color: rgba(30, 136, 229, 0.1);
 }
 
 .read-more-btn .dots {
